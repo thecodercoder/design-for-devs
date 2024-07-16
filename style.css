@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-boxs;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.pics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.pics img {
+  height: 14rem;
+  object-fit: cover;
+}
