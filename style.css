@@ -1,12 +1,22 @@
+:root {
+  --background: ;
+  --primary: ;
+  --accent1: ;
+  --accent2: ;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-boxs;
+  box-sizing: border-box;
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  background: var(--background);
+  color: var(--primary);
 }
 
 img {
@@ -15,12 +25,26 @@ img {
   height: auto;
 }
 
-.pics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+h1,
+h2,
+h3 {
+  margin-block-start: 0;
 }
 
-.pics img {
-  height: 14rem;
-  object-fit: cover;
+.wrapper {
+  /* width: min(calc(100% - 2rem), 56rem); */
+  margin-inline: auto;
+}
+
+.grid.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.fullwidth.wrapper {
+  text-align: center;
+}
+
+hgroup p {
+  color: var(--accent2);
 }
