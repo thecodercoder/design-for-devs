@@ -1,8 +1,9 @@
+/* */
+
 :root {
   --background: ;
   --primary: ;
-  --accent1: ;
-  --accent2: ;
+  --accent: ;
 }
 
 *,
@@ -19,20 +20,31 @@ body {
   color: var(--primary);
 }
 
+h1,
+h2,
+h3 {
+}
+
+p {
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-h1,
-h2,
-h3 {
-  margin-block-start: 0;
+button {
+  border: none;
+  color: var(--primary);
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .wrapper {
-  /* width: min(calc(100% - 2rem), 56rem); */
+  width: min(calc(100% - 2rem), 56rem);
   margin-inline: auto;
 }
 
@@ -42,9 +54,7 @@ h3 {
 }
 
 .fullwidth.wrapper {
+  display: grid;
+  justify-items: center;
   text-align: center;
-}
-
-hgroup p {
-  color: var(--accent2);
 }
